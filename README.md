@@ -17,7 +17,7 @@ Data Acquisition – Kaggle banking dataset with customer, loan, and deposit det
 
 Database Setup – Imported into MySQL, applied primary/foreign key relationships
 
-Exploratory Data Analysis (EDA) – Identified patterns, outliers, and risk segments
+Exploratory Data Analysis (EDA) – Identified patterns, outliers, and risk segments using Python
 
 Power BI Dashboards – Built dashboards for:
 
@@ -27,7 +27,7 @@ Deposit Analysis (Behavior & Preferences)
 
 Executive Summary (KPIs & Strategy Insights)
 
-📊 Key Insights
+📊 Key Insights (KPIs)
 
 Total Clients: 194
 
@@ -37,66 +37,62 @@ Total Deposits: $248.28M
 
 High dependency on Business Lending clients
 
-Gender and joining year filters reveal customer retention trends
+Gender and Joining Year filters reveal customer retention trends
 
 📁 Repository Contents
+sql/        → SQL scripts (table creation, queries)  
+notebooks/  → Python notebooks for data cleaning & EDA  
+powerbi/    → Power BI dashboard file (.pbix)  
+docs/       → Project report (PDF) + dashboard screenshots  
 
-sql/ → SQL scripts (table creation, queries)
-
-notebooks/ → Python notebooks for data cleaning & EDA
-
-powerbi/ → Power BI dashboard file (.pbix)
-
-docs/ → Project report (PDF) + dashboard screenshots
-
-🔹 Insights from Dashboard
+🔹 Dashboard Insights
 📊 Banking Dashboard (Overview)
 
-Client Base: 194 total clients → a relatively small but well-segmented customer pool.
+Client Base: 194 total clients → relatively small but well-segmented customer pool.
 
 Deposits vs Loans:
 
 Loans: $304.40M
 
 Deposits: $248.28M
-👉 The bank has higher loan exposure than deposits, which could be risky if defaults rise.
+👉 Higher loan exposure than deposits → risky if defaults rise.
 
-Business Lending: A large share of loans are from business clients → concentration risk, but also indicates a strategic focus on businesses.
+Business Lending: Majority of loans from business clients → concentration risk but shows strategic focus.
 
-Filters (Gender & Joining Year): Allow slicing → reveal trends in which segments are more profitable or risk-heavy.
+Filters (Gender & Joining Year): Useful for identifying profitable or risk-heavy segments.
 
 📊 Loan Analysis Dashboard
 
-Risk Categories: Loans segmented by risk profile show how much exposure the bank has in high vs. low risk clients.
+Risk Categories: Segmentation by borrower risk highlights exposure across profiles.
 
-Demographics: Loan defaults / repayments differ by gender, age, or occupation.
+Demographics: Loan repayment/default trends differ by gender, occupation, or income.
 
-Portfolio Distribution: Shows where (location) and when (time period) loans were disbursed → helps in tracking seasonal loan trends or regional concentration.
+Portfolio Distribution: Shows where (location) and when (time) loans were disbursed → useful for tracking seasonal/regional patterns.
 
 📊 Deposit Analysis Dashboard
 
-Deposit Breakdown: Checking vs. Savings deposits distribution → provides insight into client saving behavior.
+Deposit Breakdown: Checking vs. Savings deposits highlight customer preferences.
 
-Customer Segments: Different client groups (business, individuals, genders) show different deposit behaviors.
+Customer Segments: Behavior varies between business vs. individual clients.
 
-Deposits are lower than loans, which may pressure liquidity if not managed properly.
+Liquidity Risk: Deposits are lower than loans, which could stress liquidity if not managed well.
 
 📊 Executive Summary Dashboard
 
-High-level KPIs (Clients, Loans, Deposits) give a snapshot for leadership.
+Provides high-level KPIs (Clients, Loans, Deposits) for leadership.
 
-Highlights performance vs. targets (though targets weren’t shown in PDF, can be added).
+Highlights performance vs. targets (future improvement: add target KPIs).
 
-Pinpoints opportunities for growth (e.g., increase deposits, diversify loan portfolio).
+Identifies opportunities to grow deposits and diversify loan portfolios.
 
-🔹 Key Takeaways (Your Insights)
+🔹 Key Takeaways
 
-Loans > Deposits → Bank is lending more than it holds in deposits → indicates growth strategy but adds risk.
+Loans > Deposits → Indicates growth strategy but higher financial risk.
 
-Business Lending Dominates → High dependency on businesses; diversify into retail to reduce concentration risk.
+Business Lending Dominates → Diversification into retail can reduce dependency on businesses.
 
-Risk Profiles → Identifying risky borrowers is crucial; predictive analytics can reduce NPA (non-performing assets).
+Risk Profiles → Identifying risky borrowers is crucial; predictive analytics can lower NPAs.
 
-Engagement Trends → Client joining year trends + gender filters reveal who stays longer, who deposits more.
+Engagement Trends → Joining year + gender filters reveal long-term retention behaviors.
 
-Opportunities → Focus on increasing deposits, targeting underrepresented segments, and improving repayment prediction models.
+Opportunities → Grow deposits, expand into new customer segments, improve loan approval models.
